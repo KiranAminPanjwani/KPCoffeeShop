@@ -1,0 +1,59 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="Cart.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/coffee-icon.png" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="bg-img">
+        <header>
+            <nav>
+              <div class="previous-button">
+                <a href="Menu.html" class="previous">&laquo;</a>
+              </div>
+              Cart <i class='fas fa-shopping-cart'></i></nav>
+        </header>
+        
+        <div class="totalbox"><a href="Cart.html"><span id="totalProducts" class="totalbox-span" >0</span></a> </div>                
+        
+        <div class="container">
+ 
+            <table class="table">
+                <thead>
+                  <tr class="cartTitle">
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody id="products">            
+                </tbody>
+              </table>  
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <iframe src="CheckOut.html" class="iframeCheckout" title="Iframe Example"></iframe>
+        </div>
+
+        <div class="buttons">
+          <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span> -->
+          <button onclick="openNav()" class="button1" ><a class="checkout" >Check-Out</a></button>
+          <button onclick="deleteItems()" class="button2">Empty Cart</button>
+        </div>
+
+        <div id="subtotal" >
+          
+        </div>
+
+    <script src="JavaScript.js"></script>
+</body>
+
+</html>

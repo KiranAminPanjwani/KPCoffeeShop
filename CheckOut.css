@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+    background-color: rgb(22, 13, 1);
+    color: #eb9868;
+    font-size: 40;
+    padding: 15px;
+    text-align: center;
+    text-shadow: darkgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form{
+    padding: 120px 0px 30 50px;
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(255, 247, 240);
+    margin-top: -100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+#name, #email, #contact, #address{
+    padding: 12px;
+    margin: 15px;
+    background-color:white ;
+    box-shadow: -2px -1px 2px rgba(22, 11, 5, 0.897);
+    border: 1px rgba(22, 11, 5, 0.897);
+}
+#address{
+    box-shadow: -3px -2px 2px rgba(22, 11, 5, 0.897);
+}
+
+.bgimg {
+    /* background-image: url("img/bg-feedback.jpg"); */
+    /* background-color:  #fae5c7e8; */
+    background-position: center;
+    width: 100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.btn{
+    margin: 20px auto 0px auto;
+    margin-left: 17px;
+    width: 120px;
+    height: 55px;
+    padding: 5px;
+    background-color: rgb(46, 23, 10);
+    color: rgb(240, 238, 235);  
+    box-shadow: -4px -3px 2px rgba(46, 23, 10, 0.603);
+    font-weight: 190px;
+    align-items: center;
+    border: 3px black;
+    
+    /* margin-left: 93px; */
+    font-family: cursive;
+    font-size: 16.5px;
+    cursor: pointer;   
+}
+.btn:hover{
+    background-color: #eb9868;
+    color: rgb(46, 23, 10);  
+    box-shadow: -4px -3px 2px rgba(34, 17, 8, 0.801);
+}
+
+#fee{
+    margin-left: 40px;
+    font-size: medium;
+    color: black;
+    letter-spacing: 3px;
+}
+
+
+#thanks{
+    margin-top:32%;
+    display: flex;
+    text-align:center;
+    color: whitesmoke;
+    font-size: 33px;
+    word-spacing: 5px;
+    font-family: Lucida Handwriting;
+    text-shadow: 4px 4px 4px rgb(46, 23, 10);
+    width: 90%;
+}
+
+@media screen and (max-width: 540px) {
+    nav {
+        font-size: 25;
+        padding: 10px;
+        width: 252px;
+    }
+    .form{
+        padding: 90px 0px 10px 20px;
+        font-size: 15px;
+        font-family: monospace;
+        margin-top: -70px;        
+    }
+    
+    #name, #email, #contact, #address{
+        padding: 8px;
+        margin: 10px;
+        background-color:white ;
+        box-shadow: -2px -1px 2px rgba(22, 11, 5, 0.897);
+        border: 1px rgba(22, 11, 5, 0.897);
+    }
+    #address{
+        box-shadow: -3px -2px 2px rgba(22, 11, 5, 0.897);
+        width: 210px;
+    }
+    
+    .btn{
+        margin: 20px auto 0px auto;
+        margin-left: 17px;
+        width: 100px;
+        height: 45px;
+        padding: 5px;
+        font-size: 15.5px;
+        cursor: pointer;   
+    }
+    
+    #fee {
+        font-size: medium;
+        color: black;
+        letter-spacing: 2px;
+        margin-left: 12px;
+        margin-top: 23px;
+        width: 252;
+        display: flex;
+        text-align: center;
+    }
+    
+    #thanks{
+        margin-top:32%;
+        width: 252px;
+        font-size: 23px;
+    }
+    
+}

@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="CheckOut.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="coffee-icon.png" />
+    <title>Check-Out</title>
+</head>
+
+<body>
+    <div class="bgimg">
+        <header>
+            <nav>Check-Out Form <i class="fa">&#xf27b;</i></nav>   
+        </header>
+
+        <div id="form">   
+            <form class="form"
+                onsubmit="event.preventDefault(); document.getElementById('thanks').style.display = 'block'; document.getElementById('form').style.display = 'none';"
+                >
+                <label for="fname">Full Name</label><br>               
+                <input type="text" id="name" />
+
+                <br>
+                <label for="email">Email</label><br>                
+                <input type="email" id="email" />
+
+                <br>
+                <label for="no">Contact Number</label><br>
+                <input type="text" id="contact" />
+
+                <br>
+                <label for="no">Address</label><br>
+                <textarea name="w3review" rows="4" cols="50" id="address">
+                </textarea>
+                <br>
+                
+                <button class="btn" type="submit">Submit</button>       <!-- -->
+            </form>
+            <div class="note" >    
+                <p id="fee">Enter the details and press submit to proceed Check-Out.</p>
+            </div>
+        </div>
+
+
+        <div id="thanks" style="display: none;">     
+            <h3>Thank you</h3>
+            <h3 style="font-size: 20px; margin-left: 28px;">for your order!</h3>
+        </div>
+
+    </div>
+
+    <script src="JavaScript.js"></script>
+</body>
+
+</html>

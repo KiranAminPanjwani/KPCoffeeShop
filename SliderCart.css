@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(241, 209, 163);
+    color: rgb(7, 7, 7);
+}
+
+nav {
+    background-color: rgb(22, 13, 1);
+    color: #eb9868;
+    font-size: 50;
+    padding: 15px;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.cartTitle, .cart{
+    height: fit-content;
+    background-color:#0c0501a9 ;
+    color: #fff;
+    width: fit-content;
+}
+.cartTitle{
+    border: 0px;
+    padding: 5px 10px; 
+    font-size: large; 
+}
+
+th{
+    padding: 5px;
+}
+#products{
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    background-color: #0c0501a9;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    /* margin-left: 10px; */
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.table{
+    width: 30%;
+    text-align: center;  
+}
+
+td.jsH1 {
+    padding: 20px 65px;
+    font-size: 19px;
+}
+.totalbox-span{
+    display: none;
+}
+.totalbox2{
+    display: none;
+}
+.buttons{
+    margin-top: 20px;
+    display:flex ;
+    margin-left: 50px;
+}
+.button2, .button1{
+    margin-left: 6px;
+    padding: 5px 0px;
+    background-color: #eb9868;
+    font-size: medium;
+    font-weight: 40px;
+    border: none;
+}  
+.button1 a, .button2 a {
+    letter-spacing: 3px;
+    padding: 3px;
+  }
+  
+.button1 a:hover, .button2 a:hover {
+    background-color: rgba(255, 255, 255, 0.897);
+    color: #211107;
+    box-shadow: 0px 18px 16px   #000000ab, 
+    2px 6px 20px #eb9868;
+  }
+
+.button1:active , .button2:active {
+    transform: translateY(21px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button1::after , .button2::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all .9s;
+}
+
+
+@media screen and (max-width: 540px) {
+    .bg-img{
+        height: 100%;
+        width: 100%;
+    }
+    nav {
+        font-size: 30;
+        padding: 8px;
+    }
+    
+    .previous-button {
+        display: flex;
+        padding: 3px;
+    }
+    .previous-button a {
+        font-size: x-large;
+        padding: 4px 9px;
+    }
+
+    .previous-button:active {
+        transform: translateX(-15px);;
+    }
+
+    .cartTitle{
+        border: 0px;
+        padding: 10px 50px; 
+        font-size: large; 
+    }
+    
+    td.jsH1 {
+        padding: 10px 10px; 
+        font-size: 17px;
+    }
+
+    .buttons{
+        margin-left: 20px;
+    }
+    .button2, .button1{
+        padding: 2px 0px;
+    } 
+
+}

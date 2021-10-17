@@ -8,7 +8,7 @@ body {
 }
 
 .bg-img {
-    background-image: url("img/bgqq-cart.jpg");
+    background-image: url("bgqq-cart.jpg");
     width: 100%;
     height: 100%;
     background-position: center;
@@ -270,47 +270,3 @@ td.jsH1 {
     }
 
 }
-
-/* .checkout{
-
-    color: #494949 !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #ffffff;
-    padding: 6px;
-    border: 2px solid #494949 !important;
-    display: inline-block;
-    transition: all 0.4s ease 0s;
-    font-size: 12px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    cursor: pointer;
-        
-}
-.checkout:hover {
-    color: #200f05 !important;
-    background: #ffb183ea;
-    border-color: #200f05 !important;
-    transition: all 0.8s ease -8s;
-    }  
-    
-    .re{
-
-        color:  #200f05 !important;
-        text-transform: uppercase;
-        text-decoration: none;
-        background: #ffffff;
-        padding: 6px;
-        border: 2px solid #494949 !important;
-        display: inline-block;
-        transition: all 0.4s ease 0s;
-        font-size: 12px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        cursor: pointer;
-            
-    }
-    .re:hover {
-        color: #030303 !important;
-        background: #ffb183ea;
-        border-color: #200f05 !important;
-        transition: all 0.8s ease -8s;
-        }       */

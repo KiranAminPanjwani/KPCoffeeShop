@@ -1,331 +1,93 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: "Times New Roman", Times, serif;
-}
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-::-webkit-scrollbar {               
-    display: none;
-}                           
-.bg-img {
-    background-image: url("img/bg-home.jpg");
-    width: 100%;
-    height: 100%;                       
-    background-position: center;
-    background-repeat: no-repeat;       
-    background-size: cover;             
-    position: relative;                
-}
+    <title>KP Coffie Shop</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="shortcut icon" type="image/x-icon" href="img/coffee-icon.png" />    
+</head>
 
-.container {
-    margin: auto;              
-    text-align: center;
-}
-/* .shopname{
-    position: absolute;       
-    width: 700px;    
-	display: flex;            
-    align-items: center;
-    margin-top: 130px;
-	justify-content: center;	
-} */
+<body>
+    <div class="bg-img">
+        <div class="container">
+            <div class="topnav">               
+                <a href="#Home">Home</a>                           
+                <a href="Menu.html" target="_self">Menu</a>       
+                <a href="Cart.html" target="_self">Cart</a>
+            </div>
+        </div>
+        <div class="Shopname">
+            <div class="text-box">
+                <h3 class="k">KP Coffie Shop</h3>
+                <h3 class="k">KP Coffie Shop</h3>
+            </div>            
+        </div>
+        <div><h4 class="punch">"Aԃԃ A Cυρ Oϝ Sƚყʅҽ Iɳ Yσυɾ Lιϝҽ"</h4></div>
+        <div class="next-button">
+            <a href="Menu.html" class="next">Next &raquo;</a>
+        </div>
+    </div>
+    <footer class="last-div">
+        <div class="contain">                        
+            <div class="cont">
+                <div class="cont1">
+                    <div class="head-footer">Contact Us</div>
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <i style="font-size: 24px; color: green" class="fa">&#xf095;</i>    
+                                <p class="num">021-42042069</p>
+                            </li>
+                            <!-- <li>
+                                <i style="font-size: 24px; color: purple" class="fa">&#xf16d;</i>     
+                                <a class="ig-icon" href="https://instagram.com/ksk_koffieshop?igshid=xz720n4y4tau"    
+                                    target="_blank" style="color:black">ksk_koffieshop</a>       
+                            </li>
+                            <li>
+                                <i style="font-size: 24px; color: blue" class="fa">&#xf230;</i>          
+                                <a class="fb-icon" href="https://www.facebook.com/KSK-Koffie-105744711426415/"
+                                    target="_blank" style ="color:black">KSK Koffie</a>
+                            </li> -->
+                            <li>
+                                <i style="font-size: 24px; color:#211107" class="fa">&#xf27b;</i>        
+                                <a  class="feedback" href="feedback.html" target="_blank" style="color:black">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cont2">
+                    <div class="pp">
+                        <h1 class="pp-h1">Privacy Policy</h1>
+                        <br />
+                        <p>
+                            At KP Coffie Shop, we are committed to
+                            protecting your privacy as an online visitor to
+                            our website. We use the information we collect
+                            about you to maximize the services that we
+                            provide to you. We respect the privacy and
+                            confidentiality of the information provided by
+                            you and adhere to all the Privacy Principles.
+                            Please read our privacy policy below carefully.
+                            <br />
+                            <br />
+                            <a href="PrivacyPolicy.html" target="_blank">Click here for more info.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-.shopname {
-    position: absolute;
-    width: 700px;
-    margin-top: 130px;
-    justify-content: center;
-}
+            <br />
+            <hr />
+            <br />
+            <p style="text-align: center;">
+                For any queries or information feel free to contact us
+                anywhere you feel comfortable.
+            </p>
+        </div>
+    </footer>
+</body>
 
-.text-box {
-	position: relative;
-	display: flex;               
-    margin-left: 80px;
-}  
-
-.k {
-	font-size: 80px;
-	font-weight: 900;
-	background-color: #1a1818c4;
-    /* #eee0e0c4 and #131212c4 */
-	color: #eb9868;	
-    padding: 25px;
-}
-
-.k:nth-child(2) {             
-	position: absolute;	
-	color: #000000ab;
-	clip-path: inset(45% -1% 50% -1%);  
-}
-
-.punch {
-	font-size: 17px;
-	font-weight: 900;
-    margin-top: 280px;
-    margin-left: 200px;
-    color: #eb9868;
-}
-
-/* Next button--------------------- */
-.next-button{
-    display: flex;
-    margin-top: 250px;
-    margin-left: 88%;
-}  
-.next-button a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 19px;
-    background-color: #eb9868;
-    color: #000000;
-    font-size: x-large;
-    font-weight: bold;
-    letter-spacing: 3px;
-  }
-  
-.next-button a:hover {
-    background-color: rgb(255, 255, 255);
-    color: #211107;
-    box-shadow: 0px 18px 16px   #000000ab, 
-    2px 6px 20px #eb9868;
-  }
-
-.next-button:active {
-    transform: translateX(21px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.next-button::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    transition: all .9s;
-}
-
-/* --------------------- */
-
-/* The navbar */
-.topnav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;    
-}
-
-/* Navbar links */
-.topnav a {
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    font-size:xx-large;
-    font-family: Lucida Handwriting;
-    color:#211107;
-    text-shadow: 0 0 12px  white, 0 0 15px #eb9868;    
-}
-
-.topnav a:hover {
-    background-color: #211107a8;
-    color: white;
-}
-
-.contain {
-    padding: 50px;
-    background-color: #ccc;
-    /* margin: 50px; */
-    border-radius: 10px;
-}
-.cont {
-    display: flex;
-    flex-direction: row;
-}
-.cont1 {
-    width: 50%;
-}
-.cont2 {
-    width: 50%;
-}
-
-.head-footer {
-    font-size: 40px;
-    margin: 10px;
-}
-
-ul{
-    list-style: none;
-}
-li {
-    padding: 3px;
-}
-li a {
-    text-decoration: none;
-}
-
-.num {
-    margin-left: 5px;
-    display: inline;
-}
-.ig-icon {
-    margin-left: 5px;
-}
-.fb-icon {
-    margin-left: 5px;
-}
-
-.feedback{
-    margin-left: 3px;
-}
-
-.last-div{
-    padding: 50px; 
-    background: linear-gradient(to bottom,#75462ad3, #130a03,#211107);
-    /* #75462ad3, #130a03,#211107,#211107e3, #75462ad3 */
-}
-
-@media screen and (max-width: 540px) {
-
-    /* .shopname{     
-        width: 300px;    
-        display: flex;            
-        align-items: center;
-        margin-top: 38px;
-        justify-content: center;
-    } */
-
-    .shopname {
-        width: 100%;
-        margin-top: 0px;
-        margin-left: 10px;
-    }
-    .text-box {
-        position: relative;
-        display: flex;
-        margin-left: 4px;
-    }
-
-    .k {
-        font-size: 30px;
-        font-weight: 900;
-        background-color: #131212c4;
-        color: #eb9868;        
-        padding: 19px;
-    }
-    
-    .k:nth-child(2) {             
-        position: absolute;        
-        color: #fdfafa;
-        clip-path: inset(45% -1% 50% -1%);  
-    }
-    .punch {
-        font-size: 14px;
-        margin-top: 70px;
-        margin-left: 13px;
-    }
-    .next-button {
-        margin-top: 300px;
-        margin-left: 62%;
-    }
-    .next-button a {
-        padding: 5px 11px;
-    }
-    .next-button:active {
-        transform: translateX(17px);
-    }
-    .next-button::after {
-        transition: all .7s;
-    }
-    
-      
-    /* .next-button a:hover {
-        background-color: #ddd;
-        color: #211107;
-      } */
-
-    /* The navbar */
-    .topnav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-    }
-
-    /* Navbar links */
-    .topnav a {
-        margin-top: 40px;     
-        font-size:x-large;
-    }
-
-    .contain {
-        padding: 20px;
-        /* margin: 20px; */
-        height: max-content;
-    }        
-
-    .cont {
-        display:block;
-        height: 50%;
-    }    
-
-    .head-footer {
-        font-size: 30px;
-        margin: 1px;
-    }    
-    .cont2 {
-        margin-top: 50px;
-    }    
-
-    .pp{
-        width: 292px;
-        font-size: large;
-    }
-
-    .pp-h1{
-        font-size: 30px;
-    }
-
-    hr {
-        margin-top: 100px;
-    }
-    .last-div{
-        padding: 20px; 
-        background: linear-gradient(to bottom, #130a03,#211107, #ca815794);
-        /* 1b0e05 */
-    }
-    footer.last-div {
-        box-sizing: border-box;
-    }
-
-}
-/* @media screen and (max-device-width: 320px) {
-    .topnav{
-        padding: 0px;
-    }
-    .shopname{     
-        width: 265px;    
-        display: flex;            
-        align-items: center;
-        margin-top: 28px;
-    }
-
-    .k {
-        font-size: 30px;
-        font-weight: 900;
-        background-color: #131212c4;
-        color: #eb9868;        
-        padding: 13px;
-    }
-
-    .punch {
-        font-size: 14px;
-        margin-top: 89px;
-        margin-left: 17px;
-    }
-    .next-button{
-        margin-top: 335px;
-        margin-left: 62%;
-    }
-    .next-button a {
-        padding: 3px 8px;
-    }
-} */
+</html>

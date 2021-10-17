@@ -1,0 +1,82 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(20, 13, 7, 0.904);
+    background: linear-gradient(to bottom,#75462ad3, #683d21, #130a03);
+}
+nav{
+    background-color: rgb(22, 13, 1);
+    color: #eb9868;
+    font-size: 40;
+    padding: 15px;
+    text-align: center ;
+    text-shadow: darkgray;
+    height: 50px;
+    font-size: 40px;
+    font-family: inherit;
+
+  }
+  .bg-img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;      
+    height: 100%;    
+  }
+ 
+.sideimg{
+    border-radius: 5px;
+    float: right;
+    margin: 10px;    
+    box-shadow: 3px 2px 0px 0px #130a03,
+    0px 0px 0px 3px #130a03,    
+    6px 8px 5px 0px #130a03a6,
+    6px 8px 5px 3px #130a03a6;                
+}
+.sdimg{
+    height: 300px;
+    width:300px;
+}
+
+.bodypara{
+  height: fit-content;
+} 
+.para{
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: white;
+    margin-right: 10px;
+    padding: 5px; 
+    
+}
+
+@media screen and (max-width: 540px) {
+    .bg-img{
+        height: 320%;
+        width: 100%;
+    }
+    nav {
+        font-size: 30;
+        padding: 8px;
+    }
+    .sdimg{
+        height: 200px;
+        width:200px;
+    }
+    .para{
+        margin-top: 50px;
+        font-size: small;
+        letter-spacing: 2px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+        padding: 9px; 
+        
+    }
+    
+
+}
